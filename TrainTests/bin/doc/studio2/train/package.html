@@ -1,0 +1,227 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>train - studio2.train</title>
+          <meta name="description" content="train - studio2.train" />
+          <meta name="keywords" content="train studio2.train" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'studio2.train.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="studio2">studio2</a></p>
+        <h1>train</h1> <span class="permalink">
+      <a href="../../index.html#studio2.train.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">train</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="studio2.train.SittingCar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SittingCarextendsTrainCar"></a>
+      <a id="SittingCar:SittingCar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SittingCar.html"><span class="name">SittingCar</span></a><span class="result"> extends <a href="TrainCar.html" class="extype" name="studio2.train.TrainCar">TrainCar</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@SittingCarextendsTrainCar" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The class <code>SittingCar</code> represents passenger cars with seats in a train ticket reservation
+system.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>SittingCar</code> represents passenger cars with seats in a train ticket reservation
+system. Each sitting car has rows of seats, which are numbered starting from one upwards.
+Each row has a number of seats, identified by letters starting from 'a'.</p><p>When created, all the seats in a sitting car are unreserved; this changes as reservations
+are made.</p><p>In this simple implementation, no data is stored about who has reserved which seat.
+</p></div></div>
+    </li><li name="studio2.train.SleepingCar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SleepingCarextendsTrainCar"></a>
+      <a id="SleepingCar:SleepingCar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SleepingCar.html"><span class="name">SleepingCar</span></a><span class="result"> extends <a href="TrainCar.html" class="extype" name="studio2.train.TrainCar">TrainCar</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@SleepingCarextendsTrainCar" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The class <code>SleepingCar</code> represents sleeping cars in a train ticket reservation system.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>SleepingCar</code> represents sleeping cars in a train ticket reservation system.
+Each sleeping car is divided in equal-sized cabins which have a set number of places (beds)
+for passengers. The cabins are numbered from one upwards.</p><p>When created, all the cabins in a sleeping car are unreserved; this changes as
+reservations are made.</p><p><i>This implementation is intended to work in such a way that whenever anyone reserves
+any places in the car, at least one full cabin is reserved.</i> Multiple reservations can
+never share a cabin.</p><p>In this simple implementation, no data is stored about who has reserved which cabins.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="SleepingCar$.html#BedsPerCabin:Int" class="extmbr" name="studio2.train.SleepingCar#BedsPerCabin">SleepingCar.BedsPerCabin</a>
+</p></span></dd></dl></div>
+    </li><li name="studio2.train.Train" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TrainextendsAnyRef"></a>
+      <a id="Train:Train"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Train.html"><span class="name">Train</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@TrainextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">The class <code>Train</code> represents trains which consist of a number of passenger cars.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Train</code> represents trains which consist of a number of passenger cars.
+The cars are numbered from one upwards (starting from the head of the train).</p><p>A train object is mutable. New cars can be added to it with the <code>addCar</code> method,
+but initially a train has no cars. Trains have a maximum length (in cars) which
+they must not exceed.</p><p>A train may contain cars of various types, that is, instances of any class that
+mixes in the <code>TrainCar</code> trait.
+</p></div></div>
+    </li><li name="studio2.train.TrainCar" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="TrainCarextendsAnyRef"></a>
+      <a id="TrainCar:TrainCar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="TrainCar.html"><span class="name">TrainCar</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@TrainCarextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This trait represents the passenger cars of a train in a train ticket reservation system.</p><div class="fullcomment"><div class="comment cmt"><p>This trait represents the passenger cars of a train in a train ticket reservation system.
+It describes the common operations of all passenger car types. Different classes representing
+different kinds of train cars will have different implementations for these operations.</p><p>In this simple implementation, no data is stored about who has reserved which places (seats, beds,
+or the like) in the cars. A car object only keeps track of whether a place is reserved or not.</p><p>A train car's state is mutable; it changes as reservations are made.
+</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="studio2.train.SleepingCar" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SleepingCar"></a>
+      <a id="SleepingCar:SleepingCar"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SleepingCar$.html"><span class="name">SleepingCar</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@SleepingCar" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This companion object of the <code>SleepingCar</code> class merely provides a named constant that the class uses.</p><div class="fullcomment"><div class="comment cmt"><p>This companion object of the <code>SleepingCar</code> class merely provides a named constant that the class uses.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>the class <a href="SleepingCar.html" class="extype" name="studio2.train.SleepingCar">SleepingCar</a></p></span></dd></dl></div>
+    </li><li name="studio2.train.Train" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Train"></a>
+      <a id="Train:Train"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Train$.html"><span class="name">Train</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#studio2.train.package@Train" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">This companion object of the <code>Train</code> class merely provides a named constant that the class uses.</p><div class="fullcomment"><div class="comment cmt"><p>This companion object of the <code>Train</code> class merely provides a named constant that the class uses.</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>the class <a href="Train.html" class="extype" name="studio2.train.Train">Train</a></p></span></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

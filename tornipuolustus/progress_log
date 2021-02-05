@@ -1,0 +1,64 @@
+11.3:
+-Traits setup
+-Basic tower
+-Enemies
+
+TODO:   Basic tower doesn't shoot a projectile.
+Issues: Enemies might move faster diagonally. Tower firing cooldown counter missing.
+
+Notes: No testing done.
+
+Working hours: 5
+On schedule.
+
+24.3:
+-No code changes
+
+Notes: Been having a lot of fun trying to get Processing to work with scala in Eclipse. (Using Processing to draw the UI... or trying to)
+Tried many sample projects combining Scala and Processing to get working from the internet. No luck. 
+I've been able to import Processing to said projects, been able to add it to the build path, but it seems like
+the projects can't find the methods.
+
+Working hours: 10
+Falling behind due to not being able to get Processing working.
+
+8.4:
+-Great progress
+-Processing correctly draws: map, enemies, towers, player info, tower list
+-Tower placing implemented
+-Towers correctly fire at enemies
+-Unique tower cooldowns (editable)
+-Per wave enemy spawning cooldowns (editable)
+-Maps are easy to create: only have to give a sequence of positions and the game will draw them automatically and the enemies will follow.
+
+TODO: Text file reading for waves and levels. Level creator/editor. Maybe we'll even have sounds... :p
+Issues: Towers can be placed on path.
+
+Notes: Towers still fire by hitscan. Enemies move correctly, towers fire correctly (so far) and give money on hit. 
+
+8.4: (another update)
+-Different colored enemies
+-Towers fire projectiles which deal editable amounts of damage and can pierce multiple enemies
+-Implemented waves.txt which the game uses to spawn waves:
+	first line contains W (as in wave) and the wave number (not really used in code)
+	second line contains "cooldown:xx" where xx is the amount of ticks in between spawns
+	third+ lines contain "x:y" where x is the health of the enemy and y is the amount. These go in order, meaning first line's enemies are spawned first, then the second...
+	
+TODO: A lot of commenting. Level creator/editor
+Issues: Towers can be placed on path. The game crashes when trying to start a new wave after the last one is finished.
+
+Total hours ~25	
+
+
+14.4:
+-Towers cannot be placed in invalid spots: on the path or on top of other towers.
+-2 new towers: tack shooter and bomb tower
+-Displays tower info when hovering over the towers in the buy menu
+-Added a few animations: bloon pop, explosion (just circles with different colors, no real graphics)
+-Tweaked projectile hitting to allow for piercing projectiles to actually hit enemies correctly
+
+TODO: Level creator
+Issues: Game crashes when trying to start a wave past the final
+
+Total hours 40
+	

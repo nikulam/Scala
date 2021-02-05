@@ -1,0 +1,588 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); if (name == "o1") { $(this).trigger("click");}});
+$("div#packages li.indented0").css("display", "none");
+'>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.o1" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="o1"></a><a id="o1:o1"></a>
+      <span class="permalink">
+      <a href="index.html#o1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">o1</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="o1.grid" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grid"></a><a id="grid:grid"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#grid" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for working with grid-like two-dimensional structures." href="../grid/index.html">
+              <span class="name">grid</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for working with grid-like two-dimensional structures.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for working with grid-like two-dimensional structures.</p><p>The contents of this package have aliases in the top-level package <a href="../index.html" class="extype" name="o1">o1</a>, so they
+are accessible to students simply via <code>import o1._</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.robots" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="robots"></a><a id="robots:robots"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#robots" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">robots</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.robots.gui" visbl="pub" class="indented3 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="gui"></a><a id="gui:gui"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#gui" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="gui/index.html">
+              <span class="name">gui</span>
+            </a>
+      </span>
+      
+      
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Floor.html" title="The class Floor represents squares that robots can successfully occupy and move through."></a>
+                        <a href="Floor.html" title="The class Floor represents squares that robots can successfully occupy and move through.">
+                          Floor
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Lovebot.html" title="The class Lovebot represents the &quot;brains&quot; (or AI) of robots which have another
+robot as their &quot;beloved&quot;."></a>
+                        <a href="Lovebot.html" title="The class Lovebot represents the &quot;brains&quot; (or AI) of robots which have another
+robot as their &quot;beloved&quot;.">
+                          Lovebot
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Nosebot.html" title="The class Nosebot represents the &quot;brains&quot; (or AI) of robots that move in the
+direction their nose points, in straight lines, only turning when they have to."></a>
+                        <a href="Nosebot.html" title="The class Nosebot represents the &quot;brains&quot; (or AI) of robots that move in the
+direction their nose points, in straight lines, only turning when they have to.">
+                          Nosebot
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Psychobot.html" title="The class Psychobot represents the &quot;brains&quot; (or AI) of robots which stand still
+until they see another unbroken robot."></a>
+                        <a href="Psychobot.html" title="The class Psychobot represents the &quot;brains&quot; (or AI) of robots which stand still
+until they see another unbroken robot.">
+                          Psychobot
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="RobotBody.html" title="The class RobotBody represents virtual robots (or &quot;bots&quot;) which inhabit two-dimensional
+grid worlds."></a>
+                        <a href="RobotBody.html" title="The class RobotBody represents virtual robots (or &quot;bots&quot;) which inhabit two-dimensional
+grid worlds.">
+                          RobotBody
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="RobotBrain.html" title="The class RobotBrain represents the &quot;brains&quot; (or artificial intelligence, AI) of virtual
+robots that inhabit two dimensional grid worlds."></a>
+                        <a href="RobotBrain.html" title="The class RobotBrain represents the &quot;brains&quot; (or artificial intelligence, AI) of virtual
+robots that inhabit two dimensional grid worlds.">
+                          RobotBrain
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="RobotWorld.html" title="An instance of the class RobotWorld represents a mutable, two-dimensional world
+that can be inhabited by virtual robots."></a>
+                        <a href="RobotWorld.html" title="An instance of the class RobotWorld represents a mutable, two-dimensional world
+that can be inhabited by virtual robots.">
+                          RobotWorld
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Spinbot.html" title="The class Spinbot represents the &quot;brains&quot; (or AI) of extremely simple robots
+that simply spin clockwise and never change location."></a>
+                        <a href="Spinbot.html" title="The class Spinbot represents the &quot;brains&quot; (or AI) of extremely simple robots
+that simply spin clockwise and never change location.">
+                          Spinbot
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="trait" href="Square.html" title="The trait Square represents squares in a robot world as an abstract concept."></a>
+                        <a href="Square.html" title="The trait Square represents squares in a robot world as an abstract concept.">
+                          Square
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="Staggerbot.html" title="The class Staggerbot represents the &quot;brains&quot; (or AI) of robots whose algorithms are not
+sophisticated enough to beat a game of Viinaharava."></a>
+                        <a href="Staggerbot.html" title="The class Staggerbot represents the &quot;brains&quot; (or AI) of robots whose algorithms are not
+sophisticated enough to beat a game of Viinaharava.">
+                          Staggerbot
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="object" href="Wall$.html" title="The singleton object Wall represents walls, that is, squares that constitute unpassable
+obstacles for robots."></a>
+                        <a href="Wall$.html" title="The singleton object Wall represents walls, that is, squares that constitute unpassable
+obstacles for robots.">
+                          Wall
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); if (name == "o1") { $(this).trigger("click");}});
+$("div#packages li.indented0").css("display", "none");
+' class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../index.html" class="extype" name="o1">o1</a></p>
+        <h1>robots<span class="permalink">
+      <a href="../../o1/robots/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">robots</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              
+            </ol>
+          </div>
+          
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="o1.robots.Floor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FloorextendsSquare"></a><a id="Floor:Floor"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#FloorextendsSquare" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Floor represents squares that robots can successfully occupy and move through." href="Floor.html">
+              <span class="name">Floor</span>
+            </a><span class="result"> extends <a href="Square.html" class="extype" name="o1.robots.Square">Square</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Floor</code> represents squares that robots can successfully occupy and move through.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Floor</code> represents squares that robots can successfully occupy and move through.
+On creation, a floor square is always empty, but this changes if a robot arrives.</p></div></div>
+    </li><li name="o1.robots.Lovebot" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LovebotextendsRobotBrain"></a><a id="Lovebot:Lovebot"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#LovebotextendsRobotBrain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Lovebot represents the &quot;brains&quot; (or AI) of robots which have another
+robot as their &quot;beloved&quot;." href="Lovebot.html">
+              <span class="name">Lovebot</span>
+            </a><span class="result"> extends <a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Lovebot</code> represents the &quot;brains&quot; (or AI) of robots which have another
+robot as their &quot;beloved&quot;.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Lovebot</code> represents the &quot;brains&quot; (or AI) of robots which have another
+robot as their &quot;beloved&quot;. A lovebot tries to home in on its beloved.</p></div></div>
+    </li><li name="o1.robots.Nosebot" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NosebotextendsRobotBrain"></a><a id="Nosebot:Nosebot"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#NosebotextendsRobotBrain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Nosebot represents the &quot;brains&quot; (or AI) of robots that move in the
+direction their nose points, in straight lines, only turning when they have to." href="Nosebot.html">
+              <span class="name">Nosebot</span>
+            </a><span class="result"> extends <a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Nosebot</code> represents the &quot;brains&quot; (or AI) of robots that move in the
+direction their nose points, in straight lines, only turning when they have to.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Nosebot</code> represents the &quot;brains&quot; (or AI) of robots that move in the
+direction their nose points, in straight lines, only turning when they have to.
+They always turn right.</p></div></div>
+    </li><li name="o1.robots.Psychobot" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PsychobotextendsRobotBrain"></a><a id="Psychobot:Psychobot"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#PsychobotextendsRobotBrain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Psychobot represents the &quot;brains&quot; (or AI) of robots which stand still
+until they see another unbroken robot." href="Psychobot.html">
+              <span class="name">Psychobot</span>
+            </a><span class="result"> extends <a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Psychobot</code> represents the &quot;brains&quot; (or AI) of robots which stand still
+until they see another unbroken robot.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Psychobot</code> represents the &quot;brains&quot; (or AI) of robots which stand still
+until they see another unbroken robot. When this happens, they ram the victim with
+incredible speed.</p></div></div>
+    </li><li name="o1.robots.RobotBody" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RobotBodyextendsAnyRef"></a><a id="RobotBody:RobotBody"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#RobotBodyextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class RobotBody represents virtual robots (or &quot;bots&quot;) which inhabit two-dimensional
+grid worlds." href="RobotBody.html">
+              <span class="name">RobotBody</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>RobotBody</code> represents virtual robots (or &quot;bots&quot;) which inhabit two-dimensional
+grid worlds.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>RobotBody</code> represents virtual robots (or &quot;bots&quot;) which inhabit two-dimensional
+grid worlds. More specifically, each instance of the class represents a &quot;robot body&quot;
+(or &quot;chassis&quot; or &quot;hardware&quot;) and basic functionality of such a robot. Each &quot;robot body&quot;
+is associated with a &quot;robot brain&quot; that controls the body and determines what functionality
+is activated and when.</p><p>A robot is equipped with the various capabilities:</p><p>- It can sense its own surroundings (location, facing, the world that it is in).</p><p>- It can spin around in any one of the four main compass directions.</p><p>- It can move into the next square in a given direction.</p><p>- It can sense whether it is broken or not, and whether it is &quot;stuck&quot; in a square between
+  four walls.</p><p>When a robot's <code>takeTurn</code> method is called, it uses its &quot;brain&quot; to figure out what to do
+(move, turn about, etc.). Robots with different kinds of brains behave differently.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></p></span><span class="cmt"><p><a href="RobotWorld.html" class="extype" name="o1.robots.RobotWorld">RobotWorld</a></p></span></dd></dl></div>
+    </li><li name="o1.robots.RobotBrain" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="RobotBrainextendsAnyRef"></a><a id="RobotBrain:RobotBrain"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#RobotBrainextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class RobotBrain represents the &quot;brains&quot; (or artificial intelligence, AI) of virtual
+robots that inhabit two dimensional grid worlds." href="RobotBrain.html">
+              <span class="name">RobotBrain</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>RobotBrain</code> represents the &quot;brains&quot; (or artificial intelligence, AI) of virtual
+robots that inhabit two dimensional grid worlds.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>RobotBrain</code> represents the &quot;brains&quot; (or artificial intelligence, AI) of virtual
+robots that inhabit two dimensional grid worlds. A robot brain is equipped with an algorithm
+for determining what a robot should do during its turn in a robot simulation. In other words,
+a robot brain is capable of controlling the actions of a robot body.</p><p>Concrete classes that extend this class need to provide implementations for the abstract
+<code>moveBody</code> method; each such concrete class can represent a new kind of robot behavior.
+</p></div></div>
+    </li><li name="o1.robots.RobotWorld" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="RobotWorldextendso1.Grid[o1.robots.Square]"></a><a id="RobotWorld:RobotWorld"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#RobotWorldextendso1.Grid[o1.robots.Square]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="An instance of the class RobotWorld represents a mutable, two-dimensional world
+that can be inhabited by virtual robots." href="RobotWorld.html">
+              <span class="name">RobotWorld</span>
+            </a><span class="result"> extends <a href="../../../../O1Library/doc/o1/grid/Grid.html" class="extmbr" name="o1.Grid">Grid</a>[<a href="Square.html" class="extype" name="o1.robots.Square">Square</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">An instance of the class <code>RobotWorld</code> represents a mutable, two-dimensional world
+that can be inhabited by virtual robots.</p><div class="fullcomment"><div class="comment cmt"><p>An instance of the class <code>RobotWorld</code> represents a mutable, two-dimensional world
+that can be inhabited by virtual robots. This kind of &quot;robot world&quot; is a <code>Grid</code>
+whose elements are <code>Square</code> objects.</p><p>Robots -- <code>RobotBody</code> objects -- can be added to the robot world, and the robot
+world object maintains a listing of the added robots. It uses this list to have
+the robots take their turns in a round-robin fashion.</p><p>Apart from robots, a robot world can also contain walls. All robot worlds are bounded
+by walls on all sides: all the edge squares of all robot worlds are always unpassable
+by robots. Wall squares may also be added at other locations within a robot world.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Square.html" class="extype" name="o1.robots.Square">Square</a></p></span></dd></dl></div>
+    </li><li name="o1.robots.Spinbot" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpinbotextendsRobotBrain"></a><a id="Spinbot:Spinbot"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#SpinbotextendsRobotBrain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Spinbot represents the &quot;brains&quot; (or AI) of extremely simple robots
+that simply spin clockwise and never change location." href="Spinbot.html">
+              <span class="name">Spinbot</span>
+            </a><span class="result"> extends <a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Spinbot</code> represents the &quot;brains&quot; (or AI) of extremely simple robots
+that simply spin clockwise and never change location.</p>
+    </li><li name="o1.robots.Square" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="SquareextendsAnyRef"></a><a id="Square:Square"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#SquareextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a title="The trait Square represents squares in a robot world as an abstract concept." href="Square.html">
+              <span class="name">Square</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">The trait <code>Square</code> represents squares in a robot world as an abstract concept.</p><div class="fullcomment"><div class="comment cmt"><p>The trait <code>Square</code> represents squares in a robot world as an abstract concept.</p><p>A square object is potentially mutable: its state can change as robots enter and exit it.</p><p>Two concrete kinds of squares have been implemented: <code>Floor</code>s and <code>Wall</code>s.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Wall$.html" class="extype" name="o1.robots.Wall">Wall</a></p></span><span class="cmt"><p><a href="Floor.html" class="extype" name="o1.robots.Floor">Floor</a></p></span></dd></dl></div>
+    </li><li name="o1.robots.Staggerbot" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="StaggerbotextendsRobotBrain"></a><a id="Staggerbot:Staggerbot"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#StaggerbotextendsRobotBrain" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="The class Staggerbot represents the &quot;brains&quot; (or AI) of robots whose algorithms are not
+sophisticated enough to beat a game of Viinaharava." href="Staggerbot.html">
+              <span class="name">Staggerbot</span>
+            </a><span class="result"> extends <a href="RobotBrain.html" class="extype" name="o1.robots.RobotBrain">RobotBrain</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The class <code>Staggerbot</code> represents the &quot;brains&quot; (or AI) of robots whose algorithms are not
+sophisticated enough to beat a game of Viinaharava.</p><div class="fullcomment"><div class="comment cmt"><p>The class <code>Staggerbot</code> represents the &quot;brains&quot; (or AI) of robots whose algorithms are not
+sophisticated enough to beat a game of Viinaharava. These robots stagger from place to place
+harum-scarum, relying on a (pseudo)random number generator.</p></div></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="o1.robots.Wall" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Wall"></a><a id="Wall:Wall"></a>
+      <span class="permalink">
+      <a href="../../o1/robots/index.html#Wall" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="The singleton object Wall represents walls, that is, squares that constitute unpassable
+obstacles for robots." href="Wall$.html">
+              <span class="name">Wall</span>
+            </a><span class="result"> extends <a href="Square.html" class="extype" name="o1.robots.Square">Square</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">The singleton object <code>Wall</code> represents walls, that is, squares that constitute unpassable
+obstacles for robots.</p><div class="fullcomment"><div class="comment cmt"><p>The singleton object <code>Wall</code> represents walls, that is, squares that constitute unpassable
+obstacles for robots. A robot can never be in the same location with a wall.</p><p>Since all wall locations in all robot worlds are alike and immutable, it is enough to
+have a single <code>Wall</code> object that can be placed wherever there is an obstacle in any
+robot world. There is no need for separate instances for each wall square.</p></div></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> This document is part of the ebook for O1 (a.k.a. CS-A1110 Programming 1), a course at Aalto University. </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

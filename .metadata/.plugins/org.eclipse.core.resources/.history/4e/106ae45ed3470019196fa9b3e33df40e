@@ -1,0 +1,7 @@
+package TowerDefense
+
+import javax.swing._
+
+class Map(width: Int, height: Int) extends {
+  
+}

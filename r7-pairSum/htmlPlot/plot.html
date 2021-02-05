@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title> A plot</title>
+  <script src="http://d3js.org/d3.v3.js"></script>
+</head>
+<body>
+<style>
+svg.linesPlot {
+    font: 12px sans-serif;
+    border: 1px solid #ccd;
+    border-radius: 5px;
+    background: #eef;
+}
+svg.linesPlot .axis path,
+svg.linesPlot .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+svg.linesPlot .x.axis path {
+    #display: none;
+    stroke: #000;
+}
+svg.linesPlot .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+</style>
+</head>
+<body>
+<script>
+function makeLinesPlot(htmlElement, dataFile, xscale, yscale, width, height, left, right) {
+    var margin = {top: 20, bottom: 30, left: left, right: right};
+    var plotWidth = width - margin.left - margin.right;
+    var plotHeight = height - margin.top - margin.bottom;
+
+    var x = (xscale == "log")?
+    d3.scale.log().range([0, plotWidth]):
+    d3.scale.linear().range([0, plotWidth]);
+
+    var y = (yscale == "log")?
+	d3.scale.log().range([plotHeight, 0]):
+	d3.scale.linear().range([plotHeight, 0]);
+
+    var color = d3.scale.category10();
+    
+    var xAxis = d3.svg.axis().scale(x).orient("bottom");
+
+    var yAxis = d3.svg.axis().scale(y).orient("left");
+
+    var line = d3.svg.line()
+	//.interpolate("basis")
+	.x(function(d) { return x(d.n); })
+	.y(function(d) { return y(d.runtime); });
+
+    var svg = d3.select("#"+htmlElement) //.append("svg")
+	//.attr("viewBox", "0 0 " + width + " " + height )
+        //.attr("preserveAspectRatio", "xMidYMid meet")
+	.attr("width", width)
+	.attr("height", height)
+	.append("g")
+	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    d3.csv(dataFile, function(error, data) {
+	color.domain(d3.keys(data[0]).filter(function(key) { return key !== "n"; }));
+	
+	var algs = color.domain().map(function(name) {
+	    return {
+		name: name,
+		values: data.map(function(d) {
+		    return {n: d.n, runtime: +d[name]};
+		})
+	    };
+	});
+	
+	x.domain([
+	    d3.min(data, function(d) { return parseFloat(d.n); }),
+	    d3.max(data, function(d) { return parseFloat(d.n); })
+	]);
+
+	y.domain([
+	    d3.min(algs, function(c) { return d3.min(c.values, function(v) { return v.runtime; }); }),
+	    d3.max(algs, function(c) { return d3.max(c.values, function(v) { return v.runtime; }); })
+	]);
+	
+	svg.append("g")
+	    .attr("class", "x axis")
+	    .attr("transform", "translate(0," + plotHeight + ")")
+	    .call(xAxis)
+	    .append("text")
+	    .attr("x", plotWidth)
+	    .attr("dy", "-.71em")
+	    .style("text-anchor", "start")
+	    .text("n");
+	
+	svg.append("g")
+	    .attr("class", "y axis")
+	    .call(yAxis)
+	    .append("text")
+	    .attr("transform", "rotate(-90)")
+	    .attr("y", 6)
+	    .attr("dy", ".71em")
+	    .style("text-anchor", "end")
+	    .text("run time (seconds)");
+	
+	var alg = svg.selectAll(".alg")
+	    .data(algs)
+	    .enter().append("g")
+	    .attr("class", "alg");
+	
+	alg.append("path")
+	    .attr("class", "line")
+	    .attr("d", function(d) { return line(d.values); })
+	    .style("stroke", function(d) { return color(d.name); });
+	
+	alg.append("text")
+	    .datum(function(d) { return {name: d.name, value: d.values[d.values.length - 1]}; })
+	    .attr("transform", function(d) { return "translate(" + x(d.value.n) + "," + y(d.value.runtime) + ")"; })
+	    .attr("x", 3)
+	    .attr("dy", ".35em")
+	    .text(function(d) { return d.name; });
+    });
+};
+</script>
+<h1>The latest plot</h1>
+<p><b>Remember to reload this page</b> after running <tt>pairSum/plotTest.scala</tt></p>
+
+<svg class="linesPlot" id="ex1plot"></svg>
+<script>window.onresize = makeLinesPlot("ex1plot", "data.csv", "linear", "log", 900, 500, 50, 100);
+</script>
+
+</body>
+</html>

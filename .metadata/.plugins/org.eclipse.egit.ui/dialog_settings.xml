@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<item value="C:\Users\mirom\os2-tower-defense\.git" key="GitSelectRepositoryPage.lastRepository"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://version.aalto.fi/gitlab/kaplasc1/git@version.aalto.fi:kaplasc1/ostudio2-projekti-tornipuolustus.git"/>
+		<item value="git@version.aalto.fi:nikulam2/testi.git"/>
+		<item value="ssh://git@version.aalto.fi/nikulam2/testi.git"/>
+		<item value="https://version.aalto.fi/gitlab/nikulam2/testi.git"/>
+		<item value="git@version.aalto.fi:nikulam2/os2-tower-defense.git"/>
+		<item value="http://webcourse.cs.hut.fi/git/12849-minimandelbrot.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="webcourse.cs.hut.fi"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="mirom &lt;mirom@LAPTOP-70ER1JUG.home&gt;"/>
+		<item value="mirom &lt;mirom@LAPTOP-70ER1JUG&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="mirom &lt;mirom@LAPTOP-70ER1JUG.home&gt;"/>
+		<item value="mirom &lt;mirom@LAPTOP-70ER1JUG&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+		<item value="true" key="GitProjectsImportPage.STORE_NESTED_PROJECTS"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="481" key="DIALOG_HEIGHT"/>
+		<item value="138" key="DIALOG_X_ORIGIN"/>
+		<item value="224" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="700" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="462" key="DIALOG_HEIGHT"/>
+		<item value="138" key="DIALOG_X_ORIGIN"/>
+		<item value="236" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>
